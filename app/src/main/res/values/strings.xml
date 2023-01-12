@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewIstagram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buscar_usuario">Buscar usuário</string>
+    <string name="seguir">Seguir</string>
+    <string name="seguindo">Seguindo</string>
+    <string name="galeria">Abrir galeria</string>
+    <string name="camera">Abrir câmera</string>
+</resources>

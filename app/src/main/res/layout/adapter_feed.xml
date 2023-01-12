@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.VisualizarPostagemActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_perfil_postagem"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/avatar"/>
+
+            <TextView
+                android:id="@+id/text_perfil_postagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Nome"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image_postagem_selecionada"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/avatar"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <com.like.LikeButton
+                android:id="@+id/like_button_feed"
+                app:icon_type="heart"
+                app:icon_size="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <ImageView
+                android:id="@+id/image_comentario_feed"
+                android:layout_marginLeft="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_mode_comment_24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_qts_curtidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="0 curtidas" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_nome_perfil_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Nome"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_descricao_postagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Descricap foto" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
